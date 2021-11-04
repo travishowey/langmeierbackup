@@ -1,0 +1,18 @@
+@import "functions";
+@import "variables";
+
+// THEME COLORS
+
+$primary: #0776BF;
+
+$secondary: #E3B505;
+
+$tertiary: #A63C06;
+
+$gradient: linear-gradient(to right, $primary 80%, $secondary);
+
+.btn-primary {
+    background-color: $secondary;
+}
+
+@import "Bootstrap";
