@@ -1,5 +1,5 @@
-.btn-primary {
-  background-color: #E3B505;
+.btn-default {
+  color: #E3B505;
 }
 
 /*!
@@ -12015,6 +12015,30 @@ p.lead {
   color: white;
 }
 
+.text-primary {
+  color: #0776BF;
+}
+
+.text-secondary {
+  color: #E3B505;
+}
+
+.text-tertiary {
+  color: #A63C06;
+}
+
+.btn-secondary {
+  color: black;
+  background-color: #E3B505;
+  border: #E3B505;
+}
+
+.btn-secondary:hover {
+  background-color: #cca305;
+  border: #cca305;
+  color: black;
+}
+
 .navbar .navbar-nav .nav-link {
   color: #000000;
   font-size: 1.1em;
@@ -12047,7 +12071,7 @@ p.lead {
 }
 
 .jumbotron-fluid {
-  background-image: url(/images/laptop-gfbc6d5b41_1920.jpg);
+  background-image: url(/images/AdobeStock_234634481.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12067,6 +12091,18 @@ p.lead {
   width: -moz-fit-content;
   width: fit-content;
   padding: 50px;
+}
+
+.jumbotron-fluid-two {
+  background-image: url(/images/AdobeStock_317757022.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.resell-index {
+  background-color: #0776BF;
 }
 
 .accolades-carousel {
@@ -12146,6 +12182,34 @@ section.pricing {
   .pricing .card:hover .btn {
     opacity: 1;
   }
+}
+
+.individual-products {
+  margin-top: -15%;
+  padding: 10%;
+}
+
+.individual-products h4, .individual-products .h4 {
+  color: #0776BF;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.individual-products .subheading {
+  color: #A63C06;
+  font-size: 20px;
+}
+
+.individual-products .row {
+  margin-top: 10%;
+}
+
+.product-img {
+  text-align: center;
+}
+
+.product-img img {
+  width: 40%;
 }
 
 .footer-classic {
@@ -12303,6 +12367,59 @@ ul, ol {
   color: #fff;
 }
 
+.faq-container {
+  background-color: #0776BF;
+}
+
+.faq-header {
+  color: #E3B505;
+}
+
+.faqp {
+  color: #E3B505;
+}
+
+.accordion-container {
+  background-color: #0776BF;
+}
+
+#accordion-style-1 h1, #accordion-style-1 .h1,
+#accordion-style-1 a {
+  color: #0776BF;
+}
+
+#accordion-style-1 .btn-link {
+  font-weight: 400;
+  color: #0776BF;
+  background-color: transparent;
+  text-decoration: none !important;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+#accordion-style-1 .card-body {
+  border-top: 2px solid #0776BF;
+}
+
+#accordion-style-1 .card-header .btn.collapsed .fa.main {
+  display: none;
+}
+
+#accordion-style-1 .card-header .btn .fa.main {
+  background: #0776BF;
+  padding: 13px 11px;
+  color: #ffffff;
+  width: 35px;
+  height: 41px;
+  position: absolute;
+  left: -1px;
+  top: 10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  display: block;
+}
+
 .bg-image {
   background-image: url("/images/office-gc47f861b2_1920.jpg");
   background-size: cover;
@@ -12329,7 +12446,8 @@ ul, ol {
 .resell-hero {
   min-height: 100vh;
   background-size: cover;
-  background-image: url(/images/Sales.jpg);
+  background-image: url(/images/AdobeStock_330889241.jpeg);
+  color: #A63C06;
 }
 
 .resell-content-two {
@@ -12343,5 +12461,38 @@ ul, ol {
 .partner-icon {
   width: 150px;
   height: 75px;
+}
+
+.jumbotron-fluid-about {
+  background-image: url(/images/AdobeStock_267250608.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.about-top {
+  background-color: #0776BF;
+}
+
+.quote {
+  color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.profile-circle > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
