@@ -60,6 +60,30 @@ p.lead {
   color: white;
 }
 
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+.text-tertiary {
+  color: $tertiary;
+}
+
+.btn-secondary {
+  color: black;
+  background-color: $secondary;
+  border: $secondary;
+
+}
+
+.btn-secondary:hover {
+  background-color: #cca305;
+  border: #cca305;
+  color: black;
+}
+
 // NAV
 
 .navbar .navbar-nav .nav-link {
@@ -95,7 +119,7 @@ p.lead {
 // HERO
 
 .jumbotron-fluid {
-    background-image: url(/images/laptop-gfbc6d5b41_1920.jpg);
+    background-image: url(/images/AdobeStock_234634481.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,6 +137,18 @@ p.lead {
     width: fit-content;
     padding: 50px
   }
+
+  .jumbotron-fluid-two {
+    background-image: url(/images/AdobeStock_317757022.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+  }
+
+.resell-index {
+  background-color: $primary;
+}
 
   // ACCOLADES CAROUSEL
 
@@ -194,6 +230,30 @@ section.pricing {
   }
 
 
+.individual-products{
+    margin-top:-15%;
+    padding: 10%;
+}
+.individual-products h4{
+    color: $primary;
+    font-weight: bold;
+    font-size: 30px;
+}
+.individual-products .subheading{
+    color: $tertiary;
+    font-size: 20px;
+}
+.individual-products .row
+{
+    margin-top: 10%;
+}
+.product-img 
+{
+    text-align: center;
+}
+.product-img img{
+    width: 40%;
+}
 
 
   //Footer
@@ -348,6 +408,61 @@ ul, ol {
     color: #fff
 }
 
+// FAQ
+
+.faq-container {
+  background-color: $primary;
+}
+
+.faq-header {
+  color: $secondary;
+}
+
+.faqp {
+  color: $secondary;
+}
+
+// ACCORDION
+
+.accordion-container {
+  background-color: $primary;
+}
+
+#accordion-style-1 h1,
+#accordion-style-1 a{
+    color: $primary;
+}
+#accordion-style-1 .btn-link {
+    font-weight: 400;
+    color: $primary;
+    background-color: transparent;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+	padding-left: 25px;
+}
+
+#accordion-style-1 .card-body {
+    border-top: 2px solid $primary;
+}
+
+#accordion-style-1 .card-header .btn.collapsed .fa.main {
+	display:none;
+}
+
+#accordion-style-1 .card-header .btn .fa.main {
+	background: $primary;
+    padding: 13px 11px;
+    color: #ffffff;
+    width: 35px;
+    height: 41px;
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+	display:block;
+}
 
 
 // CONTACT FORM
@@ -383,7 +498,8 @@ ul, ol {
 .resell-hero {
     min-height: 100vh;
     background-size: cover;
-    background-image: url(/images/Sales.jpg);
+    background-image: url(/images/AdobeStock_330889241.jpeg);
+    color: $tertiary;
 }
 
 .resell-content-two {
@@ -399,3 +515,40 @@ ul, ol {
     width: 150px;
     height: 75px;
 }
+
+
+// ABOUT US
+
+.jumbotron-fluid-about {
+  background-image: url(/images/AdobeStock_267250608.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.about-top {
+  background-color: $primary;
+}
+
+.quote {
+  color: rgba(0,0,0,.1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.profile-circle > img{
+  width:150px;
+  height:150px;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  }
