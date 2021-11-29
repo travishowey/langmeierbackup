@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <script src="https://kit.fontawesome.com/8ffa2d57b8.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" /> 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
 <!-- NAVBAR -->
 
 <nav class="navbar navbar-expand-lg navbar-light menu shadow bg-light">
-  <a class="navbar-brand" href="/index.html">
+  <a class="navbar-brand px-3" href="/index.html">
     <img 
           src="images/logo.svg";
           height="40";
@@ -27,7 +29,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+  <div class="collapse navbar-collapse justify-content-end px-3" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="/resell.html">Become a Reseller</a>
@@ -37,6 +39,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/aboutus.html">About Us</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/signin.html"><b>Sign In</b></a>
@@ -95,60 +100,168 @@
 
 
 <!--Section: FAQ-->
-<section class="pt-3 px-3">
-    <h3 class="text-center mb-4 pb-2 text-primary fw-bold">FAQ</h3>
-    <p class="text-center mb-5">
+<section class="faq-container pt-3 pb-5 px-5">
+    <h3 class="text-center mb-4 pb-2 text-white fw-bold">FAQ</h3>
+    <p class="text-center mb-5 faqp">
       Find the answers for the most frequently asked questions below
     </p>
   
     <div class="row">
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="far fa-images"></i> What is the difference between Image and File Backup?</h6>
-        <p>
+        <h6 class="mb-3 text-white"><i class="far fa-images"></i> What is the difference between Image and File Backup?</h6>
+        <p class="faqp">
             A <strong>File</strong> Backup creates a backup of files and folders, or even complete drives with the files included. 
             An <strong>Image</strong> Backup, however, copies an entire partition and thus all bits and bytes, that reside on a hard disk partition.
         </p>
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fas fa-id-badge"></i> Can I upgrade the amount of licenses after I have purchased?</h6>
-        <p>At this time, you will only be allowed as many licences as you bough originally. If you would like more licenses you will have to
+        <h6 class="mb-3 text-white"><i class="fas fa-id-badge"></i> Can I upgrade the amount of licenses after I have purchased?</h6>
+        <p class="faqp">
+          At this time, you will only be allowed as many licences as you bough originally. If you would like more licenses you will have to
             purchase an upgraded plan.
         </p>
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fas fa-compact-disc"></i> How do I choose the right folders for backup?
+        <h6 class="mb-3 text-white"><i class="fas fa-compact-disc"></i> How do I choose the right folders for backup?
         </h6>
-        <p>
+        <p class="faqp"> 
             <strong>Langmeier Backup 9.1</strong> offers several ways to perform a backup. One example is the <i>simple 1:1 file copy.</i> Here the user can select file
             folders to be added to the backup. Then there is the <i>backup as a disk image.</i> Here, the entire computer can be backed up along with the operating system and software settings.
         </p>
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fas fa-paper-plane"></i> FAT32 or NTFS? Which format is better for backup? </h6>
-        <p>The FAT file system has the advantage over NTFS of being compatible with many operating systems. Furthermore, many other devices such as digital cameras and MP3 players also use FAT32. 
+        <h6 class="mb-3 text-white"><i class="fas fa-paper-plane"></i> FAT32 or NTFS? Which format is better for backup? </h6>
+        <p class="faqp">
+          The FAT file system has the advantage over NTFS of being compatible with many operating systems. Furthermore, many other devices such as digital cameras and MP3 players also use FAT32. 
             In contrast, NTFS is only supported by Windows operating systems. A major disadvantage of the FAT file system, however, is its limited file size. The maximum file size for FAT32 is only
             4 GB. This makes the FAT file system practically unusable for image backups.
         </p>
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fas fa-hat-wizard"></i> How do I backup Outlook?       </h6>
-        <p>Click on the Add button in the job.... and select the entry "Email and Internet Favorites" as the source. Then, use the Wizard that should automatically pop up.
-
+        <h6 class="mb-3 text-white"><i class="fas fa-hat-wizard"></i> How do I backup Outlook?       </h6>
+        <p class="faqp"
+        >Click on the Add button in the job.... and select the entry "Email and Internet Favorites" as the source. Then, use the Wizard that should automatically pop up.
         </p>
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fas fa-sun"></i> How are you doing?</h6>
-        <p>
+        <h6 class="mb-3 text-white"><i class="fas fa-sun"></i> How are you doing?</h6>
+        <p class="faqp">
           I'm doing well! Thanks for asking!
         </p>
       </div>
     </div>
   </section>
+
+  <!-- ACCORDION -->
+
+  <div class="container-fluid bg-gray accordion-container" id="accordion-style-1">
+    <div class="accordion-container pb-5">
+      <section>
+        <div class="row">
+          <div class="col-12">
+          </div>
+          <div class="col-10 mx-auto">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h1 class="mb-0 text-white">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="fa fa-usb main"></i><i class="fa fa-angle-double-right mr-3"></i>Why Can't I Create Bootable Media From My USB Flash Drive?
+                </button>
+                </h1>
+                </div>
+  
+                <div id="collapseOne" class="collapse show fade" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    We all know and fear it, even if it has not yet happened to us, the moment of shock when the system will not start. The PC does not start, the operating system is broken, everything just does not want. Immediately you think of all the data you could lose, the great expense of setting up a new computer, and, and, and, and.
+                    <br><br>
+                    But you are on the safe side if you have created an image backup with Langmeier Backup. Thanks to the existing hard disk image, we are able to restore the operating system. An important part to be able to do this is the bootable emergency media.
+                    <br><br>
+                    Since Langmeier Backup 8, our customers can create the bootable media themselves. One has with our backup software the option between a bootable USB stick and a bootable CD. Once you have created this boot media, you can start Langmeier Backup in the boot environment and restore the operating system.
+                    <br><br>
+                    But what if you want to create a bootable USB stick, but it does not show up under the options? This could be for the following reason:
+                    <br><br>
+                    Langmeier Backup only shows external drives when creating a bootable USB stick, but it could well be that your USB stick is shown by Windows as an internal drive. These are deliberately not shown, for security reasons, so that someone doesn't overwrite an internal drive, otherwise this could have fatal consequences.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa fa-file-alt main"></i><i class="fa fa-angle-double-right mr-3"></i>The Easiest Way to Version Files.
+                </button>
+                </h5>
+                </div>
+                <div id="collapseTwo" class="collapse fade" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Historicization, also known as versioning, provides another method in Langmeier Backup to keep older versions of  the files on the backup. Normally, files already on the backup are overwritten by the backup program with the updated files. If you want to revert to older versions of a file later, you must back up the files to multiple backup media - or you can turn on Langmeier Backup's historization feature.
+                    <br><br>
+                    You can enable the Back Up Files Historically options on any item by right-clicking on "Edit Item“:
+                    <br><br>
+                    Here we describe for you how to back up data in a historicized or versioned manner using the Langmeier Backup program. This gives you access to earlier versions of files that are important to you.
+                    <br><br>
+                    With each backup, the file is then not replaced, but, in addition to the files that are already on the backup. The file that is already on the backup, and would otherwise be translated, is now given a new filename in the form:
+                    <br><br>
+                    <strong>Original filename + version date + file extension</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa fa-expeditedssl main"></i><i class="fa fa-angle-double-right mr-3"></i>How to make a tap-proof backup to FTP over SSL
+                </button>
+                </h5>
+                </div>
+                <div id="collapseThree" class="collapse fade" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    With Langmeier Backup you can also perform an FTP backup using an optional secure connection to the server, which can be activated independently of the data encryption by the backup software Langmeier Backup. The secure connection to the data backup is established using SSL (not to be confused with sFTP, which connects to the server via SSH - this connection type is not supported by Langmeier Backup).
+                    <br><br>
+                    To have Langmeier Backup communicate with the server via FTP using a secure connection, select the „Secure connection (SSL)“ checkbox in the online backup settings:
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <i class="fa fa-hiking main"></i><i class="fa fa-angle-double-right mr-3"></i>This is how automatic network backup always starts!
+                </button>
+                </h5>
+                </div>
+                <div id="collapseFour" class="collapse fade" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Suppose you are performing a network backup with Langmeier Backup to a network folder and the program behaves like this: manual backups start as desired, but for the automatically set up backup, this or a similar error message appears in the log:
+                    <br><br>
+                    Disk \server name\sh are name\ is not available.
+                    <br><br>
+                    Or, if the network folder is the backup source:
+                    <br><br>
+                    Source #1 cannot be found
+                    <br><br>
+                    This is because the Langmeier Backup service runs under the "System" user by default. However, the "System" user has no login credentials. It is a login-data-less user. However, for security reasons, Windows network shares are often only accessible with a user with login data. Connections without credentials are thus blocked by Windows 
+                    <br><br>
+                    <strong>Solution:</strong> Search for the service  "Langmeier Backup Service" in the Windows services. Press the right mouse button on this service and then select "Properties". In the "Login" tab, enter the login data of a user. This user must have permissions on the files and folders to be accessed. 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>	
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- WAVES -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0776BF" fill-opacity="1" d="M0,64L0,96L288,96L288,160L576,160L576,96L864,96L864,192L1152,192L1152,0L1440,0L1440,0L1152,0L1152,0L864,0L864,0L576,0L576,0L288,0L288,0L0,0L0,0Z"></path></svg>
 
   <!-- Contact Form -->
 
@@ -238,6 +351,7 @@
             <li><a href="/resell.html">Become a Reseller</a></li>
             <li><a href="/products.html">Products</a></li>
             <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/aboutus.html">About Us</a></li>
             <li><a href="/signin.html">Sign In</a></li>
           </ul>
         </div>
@@ -262,5 +376,8 @@
   </footer>
 
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
   </html>
